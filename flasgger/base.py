@@ -371,16 +371,8 @@ class Swagger(object):
                     'version', self.config.get('version', "0.0.1")
                 ),
                 "title": spec.get(
-                    'title', self.config.get('title', "A swagger API")
-                ),
-                "description": spec.get(
-                    'description', self.config.get('description',
-                                                   "powered by Flasgger")
-                ),
-                "termsOfService": spec.get(
-                    'termsOfService', self.config.get('termsOfService',
-                                                      "/tos")
-                ),
+                    'title', self.config.get('title', "Horrid-API")                                                                                   "powered by Flasgger")
+                ),                
             },
             "paths": self.config.get('paths') or defaultdict(dict),
             "definitions": self.config.get('definitions') or defaultdict(dict)
