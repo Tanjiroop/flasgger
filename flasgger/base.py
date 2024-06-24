@@ -372,7 +372,7 @@ class Swagger(object):
                 ),
                 "title": spec.get(
                     'title', self.config.get('title', "Horrid-API")                                                                                   "powered by Flasgger")
-                ),                
+                )                
             },
             "paths": self.config.get('paths') or defaultdict(dict),
             "definitions": self.config.get('definitions') or defaultdict(dict)
