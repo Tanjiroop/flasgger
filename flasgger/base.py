@@ -80,7 +80,7 @@ class APIDocsView(MethodView):
         The data under /apidocs
         json or Swagger UI
         """
-        base_endpoint = self.config.get('endpoint', 'flasgger')
+        base_endpoint = self.config.get('endpoint', 'HorridAPI')
         specs = [
             {
                 "url": url_for(".".join((base_endpoint, spec['endpoint']))),
