@@ -101,7 +101,7 @@ class APIDocsView(MethodView):
         data = {
             "specs": specs,
             "urls": urls,
-            "title": self.config.get('title', 'Flasgger')
+            "title": self.config.get('title', 'HorridAPI')
         }
         if request.args.get('json'):
             # calling with ?json returns specs
