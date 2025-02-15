@@ -101,7 +101,7 @@ class APIDocsView(MethodView):
         data = {
             "specs": specs,
             "urls": urls,
-            "title": self.config.get('title', 'HorridAPI')
+            "title": self.config.get('title', 'MangoAPI')
         }
         if request.args.get('json'):
             # calling with ?json returns specs
@@ -371,7 +371,7 @@ class Swagger(object):
                     'version', self.config.get('version', "0.0.1")
                 ),
                 "title": spec.get(
-                    'title', self.config.get('title', "Horrid-API")                                                                                   
+                    'title', self.config.get('title', "MangoAPI")                                                                                   
                 ),                
             },
             "paths": self.config.get('paths') or defaultdict(dict),
